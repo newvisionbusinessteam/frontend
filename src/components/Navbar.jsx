@@ -13,7 +13,7 @@ const Navbar = () => {
   const activeClassName = "font-bold md:border-b-4 md:border-blue-500 md:pb-2";
 
   return (
-    <nav className="bg-white text-gray-800 p-1 shadow-md fixed top-0 left-0 w-full z-40 mt-7">
+    <nav className="bg-white text-gray-800 p-1 shadow-md fixed top-0 left-0 w-full z-40 mt-6">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-0">
         <div className="flex items-center">
           <NavLink to="/" className="text-xl font-bold">
@@ -60,16 +60,16 @@ const Navbar = () => {
               <NavLink to="/" exact className={({ isActive }) => isActive ? "font-bold" : ""} onClick={toggleMenu}>
                 Home
               </NavLink>
-              <NavLink to="/about" className={({ isActive }) => isActive ? "font-bold" : ""} onClick={toggleMenu}>
+              <NavLink to="/outlets" className={({ isActive }) => isActive ? "font-bold" : ""} onClick={toggleMenu}>
                 Our outlets
               </NavLink>
-              <NavLink to="/mission" className={({ isActive }) => isActive ? "font-bold" : ""} onClick={toggleMenu}>
+              <NavLink to="/about" className={({ isActive }) => isActive ? "font-bold" : ""} onClick={toggleMenu}>
                 About us
               </NavLink>
-              <NavLink to="/gallery" className={({ isActive }) => isActive ? "font-bold" : ""} onClick={toggleMenu}>
+              <NavLink to="/franchise" className={({ isActive }) => isActive ? "font-bold" : ""} onClick={toggleMenu}>
                 Franchise
               </NavLink>
-              <NavLink to="/donate" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md w-full text-center" onClick={toggleMenu}>
+              <NavLink to="/order" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md w-full text-center" onClick={toggleMenu}>
                 Order Now
               </NavLink>
             </div>

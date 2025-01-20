@@ -1,17 +1,19 @@
 import { Link, NavLink } from 'react-router-dom';
 
-import logo from "../assets/fran.png";
+import logo from "../assets/NVBT.png";
+import franchise from "../assets/fran.png"
 import { FaGlobe, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-gray-800 text-white py-8">
       <div className="max-w-7xl mx-auto px-5">
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="mb-8 md:mb-9 w-full md:w-1/3">
             <div className="">
+              <img src={logo} alt="logo" className="h-24 w-64 mb-4" />
               <h2 className='text-lg text-blue-500 font-semibold'>Master Franchise for:</h2>
-              <img src={logo} alt="logo" className="h-24 w-64 " />
+              <img src={franchise} alt="logo" className="h-24 w-64 " />
             </div>
             {/* <p className="text-md mt-2">
               We empower communities with education, healthcare, and social welfare, uplifting the underprivileged and fostering a brighter future.
@@ -51,7 +53,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center mt-10 border-t border-gray-700 pt-4">
           <p className="text-center md:text-left text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} New Vision Business Team. All rights reserved.
+            &copy; {new Date().getFullYear()} New Vision Business Team Pvt. Limited. All rights reserved.
           </p>
           <div className="flex space-x-4 text-sm">
             <Link to="" className="hover:underline">Privacy Policy</Link>
